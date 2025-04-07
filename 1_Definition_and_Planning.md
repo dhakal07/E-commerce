@@ -124,8 +124,8 @@ Hard-to-find customer service options
 | Adding to Cart | Customer | Users can add or remove products from their shopping carts. |
 | Checkout and Payments | Customer | Users can enter payment details and place the order successfully. |
 | Order Tracking | Customer | User can check the status of their orders (pending, shipped, delivered). |
-| Product management | Admin | Admins can add, edit, and delete products. |
-| Order Management | Admin | Admins can update order and products status |
+
+
 
 ## 3. UI Prototypes
 
