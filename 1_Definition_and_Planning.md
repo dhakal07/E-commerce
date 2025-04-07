@@ -123,8 +123,7 @@ Hard-to-find customer service options
 | Browesing Products | Customer | Customers can browse, search and filter products. |
 | Adding to Cart | Customer | Users can add or remove products from their shopping carts. |
 | Checkout and Payments | Customer | Users can enter payment details and place the order successfully. |
-| Order Tracking | Customer | User can check the status of their orders (pending, shipped, delivered). |
-
+| Order Tracking | Customer | User can check the status of their orders (pending, shipped, delivered). | **Optional**
 
 
 ## 3. UI Prototypes
@@ -133,7 +132,7 @@ Add something
 
 ## 4. Information Architecture and Technical Design
 
-Here we will defining how everything in the project is structured and how different parts communicate—both from a user experience and a technical perspective.  
+Here we will be defining how everything in the project is structured and how different parts communicate, both from a user experience and a technical perspective.  
   
 We will be covering  
   
@@ -149,4 +148,20 @@ We will be covering
 
 ## 5. Project Management and User Testing
 
-Add something
+| Timeline | 	Task|
+|----------|----------|
+| Week 1 | Personas/User cases/User Flow/UI Prototypes and Technical Design Plan |
+| week 2 | Work on Frontend and Backend |
+| Week 3-4 | Continue on Frontend, Backend, Database and do testing |
+| Week 5 | Final touch ups, re-checking databases, and testing again |
+
+## Tools Used:
+Visual Studio Code
+Github
+Figma for design Purpose
+Teams for communication
+
+## User Testing Plan
+
+
+
