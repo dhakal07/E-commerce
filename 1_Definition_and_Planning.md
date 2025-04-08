@@ -117,7 +117,7 @@ Hard-to-find customer service options
 
 ## 2. Use Cases and User Flows
 
-| Use Case | 	Actors| 	User Flow |
+| Use Case | 	Actors| 	
 |----------|----------|----------|
 | User Registeration/Login | Customer, Admin |
 | Browsing Products | Customer |
