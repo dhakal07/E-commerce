@@ -126,8 +126,8 @@ Hard-to-find customer service options
 | Order Tracking | Customer | 
 
 **User Flow 1: User Registration/Login**  
-**Homepage:** User lands on the homepage.
-**Sign Up/Log In:**  
+**Homepage:** User lands on the homepage.  
+**Sign Up/Log In:**   
 User clicks "Sign Up" or "Log In."  
 Sign Up: Enters email, password, confirms password → Submits → Verifies email.  
 Log In: Enters email, password → Submits.  
