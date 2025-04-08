@@ -119,17 +119,47 @@ Hard-to-find customer service options
 
 | Use Case | 	Actors| 	User Flow |
 |----------|----------|----------|
-| User Registeration/Login | Customer, Admin | Users should be able to sign up, log in and manage their profiles. |
-| Browsing Products | Customer | Customers can browse, search and filter products. |
-| Adding to Cart | Customer | Users can add or remove products from their shopping carts. |
-| Checkout and Payments | Customer | Users can enter payment details and place the order successfully. |
-| Order Tracking | Customer | User can check the status of their orders (pending, shipped, delivered). | **Optional**
+| User Registeration/Login | Customer, Admin |
+| Browsing Products | Customer |
+| Adding to Cart | Customer | 
+| Checkout and Payments | Customer | 
+| Order Tracking | Customer | 
 
-1. **Sign up**: Users enter email, password, and confirm password from home screen.  
-2. **Log in**: User enters credentials if user has already registered.  
-3. **Browsing Products**: User can browse product from navigation bar, named as ""Man", "Women" and "kids". It produces a new screen on click.  
-4. **Adding to Cart**: User clicks the "Add to Cart" button on a product page.  Cart icon shows the number of items added. User can view, remove, or change quantities of items in the cart.  
-5. **Checkout and Payments**: User enters their shipping details (address, phone number). User chooses a payment method (Stripe integration). User confirms payment and receives confirmation details.
+**User Flow 1: User Registration/Login**  
+1. **Homepage:** User lands on the homepage.
+2. **Sign Up/Log In:**  
+User clicks "Sign Up" or "Log In."  
+Sign Up: Enters email, password, confirms password → Submits → Verifies email.  
+Log In: Enters email, password → Submits.  
+
+
+**User Flow 2: Browsing Products**  
+**Homepage:** User selects a category ("Men," "Women," "Kids").  
+**Product Listing:** System shows products.  
+**Search/Filter:** User searches (e.g., "jacket") or filters (e.g., price).  
+**Product Details:** User clicks a product to view details.  
+  
+**User Flow 3: Adding to Cart**  
+**Product Details:** User selects size/color → Clicks "Add to Cart."  
+**Cart Update:** Cart icon shows item count.  
+**Cart Page:** User clicks cart → Views items → Adjusts quantity or removes.  
+  
+
+**User Flow 4: Checkout and Payments**  
+**Cart Page:** User clicks "Proceed to Checkout."  
+**Shipping:** User enters address, phone number.  
+**Payment:** User selects payment method (Stripe) → Enters details → Confirms.  
+**Confirmation:** User receives order confirmation.  
+  
+**User Flow 5: Order Tracking**  
+**Account Page:** User goes to "My Orders."  
+**Order List:** System shows orders with status.  
+**Order Details:** User clicks an order → Views status and tracking.  
+  
+**User Flow 6: Wishlist (For Lisa, the Housemaker)** (**Thinking of it**)
+**Product Details:** User clicks "Add to Wishlist."  
+**Wishlist Page:** User goes to "Wishlist" → Views saved items.  
+**Action:** User adds to cart or removes items.  
 
 ## 3. UI Prototypes
 
