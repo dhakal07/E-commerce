@@ -120,15 +120,20 @@ Hard-to-find customer service options
 | Use Case | 	Actors| 	User Flow |
 |----------|----------|----------|
 | User Registeration/Login | Customer, Admin | Users should be able to sign up, log in and manage their profiles. |
-| Browesing Products | Customer | Customers can browse, search and filter products. |
+| Browsing Products | Customer | Customers can browse, search and filter products. |
 | Adding to Cart | Customer | Users can add or remove products from their shopping carts. |
 | Checkout and Payments | Customer | Users can enter payment details and place the order successfully. |
 | Order Tracking | Customer | User can check the status of their orders (pending, shipped, delivered). | **Optional**
 
+1. **Sign up**: Users enter email, password, and confirm password from home screen.  
+2. **Log in**: User enters credentials if user has already registered.  
+3. **Browsing Products**: User can browse product from navigation bar, named as ""Man", "Women" and "kids". It produces a new screen on click.  
+4. **Adding to Cart**: User clicks the "Add to Cart" button on a product page.  Cart icon shows the number of items added. User can view, remove, or change quantities of items in the cart.  
+5. **Checkout and Payments**: User enters their shipping details (address, phone number). User chooses a payment method (Stripe integration). User confirms payment and receives confirmation details.
 
 ## 3. UI Prototypes
 
-Add something
+https://teams.microsoft.com/l/message/19:e40aff3e-6515-4b37-8cfb-da06c6277852_f0f3e44c-a3a0-4be8-af1d-94c7fb29ae8c@unq.gbl.spaces/1744100380572?context=%7B%22contextType%22%3A%22chat%22%7D
 
 ## 4. Information Architecture and Technical Design
 
@@ -162,6 +167,19 @@ Figma for design Purpose
 Teams for communication
 
 ## User Testing Plan
+In our project we have plans to have mainly two different testing.  
+**Functionality Testing:**  
+Ensures that all features of the e-commerce platform (like login, browsing, cart, and checkout) work as expected and meet the specified requirements.
+
+**Integration Testing:**  
+Tests the interaction between different modules or components (e.g., front-end, back-end, and payment gateway) to ensure they work together seamlessly.
+
+
+
+
+
+
+
 
 
 
