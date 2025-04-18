@@ -1,6 +1,6 @@
 # Project phase 2 - Basic structure and main functionalities
 
-Add something
+In this Phase, we focus on establishing a strong foundation for the project by implementing the basic structure and core functionalities. This phase set up the essential components of both the frontend and backend, enabling us to create a functional e-commerce application. The project’s architecture is carefully designed to be modular and scalable, with the aim to maintain high code quality and ensure that the system can be expanded and enhanced in later phases.
 
 ## 1. Environment
 
