@@ -26,19 +26,19 @@ Add something
 
 ## 5. Basic structure and architecture
 
-E-commerce/
-├── client/                # Frontend - React app
-│   ├── public/
-│   └── src/
-│       ├── components/    # Navbar, ProductList, Cart, etc.
-│       ├── pages/         # Homepage, ProductPage, etc.
-│       └── App.js
-├── server/                # Backend - Express.js
-│   ├── routes/            # Product, User, Cart, Order
-│   ├── controllers/       # Business logic
+E-commerce/  
+├── client/                  # Frontend - React app
+│   ├── public/  
+│   └── src/  
+│       ├── components/     # Navbar, ProductList, Cart, etc.
+│       ├── pages/        # Homepage, ProductPage, etc.
+│       └── App.js  
+├── server/                  # Backend - Express.js
+│   ├── routes/             # Product, User, Cart, Order
+│   ├── controllers/        # Business logic
 │   ├── db/                # PostgreSQL config
-│   └── server.js
-└── README.md
+│   └── server.js  
+└── README.md  
 
 
 ## 6. Functionalities
