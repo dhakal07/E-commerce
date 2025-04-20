@@ -6,11 +6,11 @@ In this Phase, we focus on establishing a strong foundation for the project by i
 
 Our development environment uses both local and cloud-based services to ensure scalability and modern deployment practices:
 
-**Frontend**: Built with React, runs locally and ready for deployment to Vercel or Render
-**Backend**: Node.js with Express framework
-**Database**: PostgreSQL (via pg package)
-**Version Control**: GitHub
-**Dev Tools**: Visual Studio Code, Postman, Thunder Client
+**Frontend**: Built with React, runs locally and ready for deployment to Vercel or Render  
+**Backend**: Node.js with Express framework  
+**Database**: PostgreSQL (via pg package)  
+**Version Control**: GitHub  
+**Dev Tools**: Visual Studio Code, Postman, Thunder Client  
 
 ## 2. Backend
 
