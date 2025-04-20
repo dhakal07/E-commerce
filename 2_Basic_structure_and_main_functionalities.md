@@ -6,23 +6,51 @@ In this Phase, we focus on establishing a strong foundation for the project by i
 
 Our development environment uses both local and cloud-based services to ensure scalability and modern deployment practices:
 
-**Frontend**: Built with React, runs locally and ready for deployment to Vercel or Render  
-**Backend**: Node.js with Express framework  
-**Database**: PostgreSQL (via pg package)  
-**Version Control**: GitHub  
-**Dev Tools**: Visual Studio Code, Postman, Thunder Client  
+- **Frontend**: Built with React, runs locally and ready for deployment to Vercel or Render  
+- **Backend**: Node.js with Express framework  
+- **Database**: PostgreSQL (via pg package)  
+- **Version Control**: GitHub  
+- **Dev Tools**: Visual Studio Code, Postman, Thunder Client  
+
 
 ## 2. Backend
 
-Add something
+The backend of the application is built using **Node.js** and **Express.js**. It is responsible for handling all the API endpoints, business logic, user authentication, and database operations.
+
+- **Structure**: Separated into `routes`, `controllers`, and `db` folders for modularity  
+- **Authentication**: JSON Web Tokens (JWT) are used for secure user sessions  
+- **Functionality**:
+  - Handles product browsing, cart management, order processing  
+  - Manages admin routes for adding/editing products  
+- **Error Handling**: Uses `try/catch` blocks with proper HTTP status codes  
+- **Deployment-ready**: Can be easily deployed using Render, Railway, or other platforms
+
 
 ## 3. Frontend
 
-Add something
+The frontend is developed using **React**, providing a responsive and modern user interface. Users can browse products, manage their cart, and complete purchases through an intuitive UI.
+
+- **Structure**: Organized into reusable components and pages  
+- **State Management**: Basic use of React hooks (`useState`, `useEffect`)  
+- **UI Elements**:
+  - Navigation bar, product cards, cart modal  
+  - Toast messages for user feedback  
+- **Routing**: Implemented using `react-router-dom`  
+- **Design**: Styled using plain CSS for simplicity and responsiveness
+
 
 ## 4. Database
 
-Add something
+The database layer uses **PostgreSQL** to store all persistent data related to products, users, orders, and cart items.
+
+- **Setup**: Configured in the `db/` folder using the `pg` package  
+- **Tables**:
+  - `users` – for storing user credentials and roles (admin/user)  
+  - `products` – product data such as title, price, stock  
+  - `orders` – stores orders with timestamps and statuses  
+  - `cart_items` – links users with the items in their cart  
+- **Security**: Queries use parameterized inputs to prevent SQL injection  
+- **Tools Used**: `pg`, pgAdmin (optional for GUI), SQL shell  
 
 ## 5. Basic structure and architecture
 
@@ -70,13 +98,10 @@ E-commerce/
 
 ## 8. Code quality and documentation
 
-Backend routes and controllers are modular and follow clean coding standards  
-
-Frontend React components are well-separated and reusable  
-
-Each part of the system includes inline comments and clear filenames  
-
-README file documents installation, dependencies, and project overview  
+- Backend routes and controllers are modular and follow clean coding standards  
+- Frontend React components are well-separated and reusable  
+- Each part of the system includes inline comments and clear filenames  
+- README file documents installation, dependencies, and project overview 
 
 ## 9. Testing and error handling
 Testing Overview
@@ -91,32 +116,25 @@ Testing Overview
 
 We’ve included basic error handling and are expanding tests in the next phase:  
 
-**Backend:**  
+### Details
 
-Try/catch blocks used around async DB operations  
+- **Backend**:
+  - Try/catch blocks used around async DB operations  
+  - Error messages are returned with proper HTTP status codes  
 
-Error messages are returned with proper HTTP status codes  
+- **Frontend**:
+  - User feedback shown on invalid login, checkout errors  
 
-**Frontend:**  
-
-User feedback shown on invalid login, checkout errors  
-
-**Testing:**  
-
-Manual testing done via Thunder Client/Postman  
-
-Further plans: Jest for backend and React Testing Library for frontend  
-
+- **Testing**:
+  - Manual testing done via Thunder Client/Postman  
+  - Further plans: Jest for backend and React Testing Library for frontend  
 
 
 ## 10. User interface and interaction
 
-The UI is designed using React and CSS, following modern web standards:  
+he UI is designed using React and CSS, following modern web standards:
 
-**Responsive layout, clean visuals**  
-
-**Navigation bar, product cards, cart modal, and toast messages**  
-
-**Stripe integration for secure payments** 
-
-**Clear user feedback for success/failure messages**
+- **Responsive layout, clean visuals**  
+- **Navigation bar, product cards, cart modal, and toast messages**  
+- **Stripe integration for secure payments**  
+- **Clear user feedback for success/failure messages**
