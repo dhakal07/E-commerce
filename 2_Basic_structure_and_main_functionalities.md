@@ -68,7 +68,7 @@ E-commerce/
 | **Deployment**  | GitHub (Vercel planned)                         |
 | **Dev Tools**   | VS Code, Postman                                |
 
-## 7. Code quality and documentation
+## 8. Code quality and documentation
 
 Backend routes and controllers are modular and follow clean coding standards  
 
@@ -78,7 +78,16 @@ Each part of the system includes inline comments and clear filenames
 
 README file documents installation, dependencies, and project overview  
 
-## 8. Testing and error handling
+## 9. Testing and error handling
+Testing Overview
+
+| Test Type            | Status        | Tools Used                        |
+|----------------------|---------------|-----------------------------------|
+| Functionality Testing | ✅ Done       | Manual via UI                     |
+| Integration Testing   | ✅ Done       | Postman, Frontend                 |
+| Error Handling        | ✅ Done       | Try/catch, UI                     |
+| Automated Tests       | ⏳ Planned    | Jest, React Testing Lib           |
+
 
 We’ve included basic error handling and are expanding tests in the next phase:  
 
@@ -100,7 +109,7 @@ Further plans: Jest for backend and React Testing Library for frontend
 
 
 
-## 9. User interface and interaction
+## 10. User interface and interaction
 
 The UI is designed using React and CSS, following modern web standards:  
 
