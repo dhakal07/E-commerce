@@ -1,7 +1,17 @@
 const express = require('express');
 const cors = require('cors');
+const authRoutes = require('./routes/auth');
+const productRoutes = require('./routes/products');
+
+app.use('/api/products', productRoutes);
+
+
+app.use('/api/auth', authRoutes);
+
 
 const app = express();
+require('dotenv').config();
+
 
 // Enable CORS for requests from the React frontend running on localhost:3000
 app.use(cors({

@@ -163,7 +163,7 @@ Log In: Enters email, password → Submits.
 
 ## 3. UI Prototypes
 
-https://teams.microsoft.com/l/message/19:e40aff3e-6515-4b37-8cfb-da06c6277852_f0f3e44c-a3a0-4be8-af1d-94c7fb29ae8c@unq.gbl.spaces/1744100380572?context=%7B%22contextType%22%3A%22chat%22%7D
+https://www.figma.com/design/fkTmqbOvTaKNbjigFjDnZu/Untitled?node-id=0-1&t=pVY4aM6CLTEoCvLr-1
 
 ## 4. Information Architecture and Technical Design
 
