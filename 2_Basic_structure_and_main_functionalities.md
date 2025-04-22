@@ -77,10 +77,10 @@ E-commerce/
 
 | Functionality          | Status           | Description                                               |
 |------------------------|------------------|-----------------------------------------------------------|
-| 🛍️ Browsing Products   | ✅ Done          | Users can browse available products from the frontend     |
-| 🛒 Add/Remove to Cart   | ✅ Done          | Add items, increase quantity, or remove them              |
+| 🛍️ Browsing Products   | On Process          | Users can browse available products from the frontend     |
+| 🛒 Add/Remove to Cart   | On Process          | Add items, increase quantity, or remove them              |
 | ✅ User Registration/Login | ✅ Done      | Auth system using JWT for login and secure sessions       |
-| 💳 Checkout & Payments  | ✅ Stripe Integrated | Simulated/real payment integration via Stripe           |
+| 💳 Checkout & Payments  | On Process | Simulated/real payment integration via Stripe           |
 | 📦 Order Tracking      | ✅ Basic         | Orders saved with statuses; status displayed to user      |
 | 🔒 Admin Access        | ✅ Done          | Admin can manage products/orders (basic dashboard)        |
 
@@ -108,9 +108,9 @@ Testing Overview
 
 | Test Type            | Status        | Tools Used                        |
 |----------------------|---------------|-----------------------------------|
-| Functionality Testing | ✅ Done       | Manual via UI                     |
-| Integration Testing   | ✅ Done       | Postman, Frontend                 |
-| Error Handling        | ✅ Done       | Try/catch, UI                     |
+| Functionality Testing | ✅ Partially Done       | Manual via UI                     |
+| Integration Testing   | ✅ Partially Done       | Postman, Frontend                 |
+| Error Handling        | ✅ On Process       | Try/catch, UI                     |
 | Automated Tests       | ⏳ Planned    | Jest, React Testing Lib           |
 
 
