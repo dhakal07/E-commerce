@@ -1,0 +1,65 @@
+/* Contact.css */
+
+/* Contact Boxes (Feedback, Return, Order Tracking Buttons) */
+.contact-boxes {
+  position: fixed;
+  top: 80px; /* Adjust this value to ensure the buttons are below the navbar */
+  right: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.contact-boxes button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(145deg, #6a5af9, #9a67f0);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-boxes button:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-boxes button:focus {
+  outline: none;
+}
+
+.contact-boxes button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Social Media Section (Follow Us) */
+.social-media {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-media a {
+  display: inline-block;
+}
+
+.social-media img {
+  width: 40px; /* Explicit size for the icons */
+  height: 40px; /* Explicit size for the icons */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}

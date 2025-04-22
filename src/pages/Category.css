@@ -1,0 +1,57 @@
+/* src/pages/Category.css */
+
+.category-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.item-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.item-price {
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+/* Category Themes */
+.male-page {
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+}
+
+.female-page {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+}
+
+.kids-page {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}

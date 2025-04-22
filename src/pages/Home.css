@@ -1,0 +1,27 @@
+.home {
+  text-align: center;
+}
+
+.shop-now {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 120px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

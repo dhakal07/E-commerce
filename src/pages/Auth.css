@@ -1,0 +1,78 @@
+/* Style for the login container */
+.login-container {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* Add space from the right edge of the screen */
+  transform: translateY(-50%);
+  width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-left: 2px solid #ddd;
+  z-index: 1000;
+  max-height: 90%; /* To ensure the form doesn't overflow */
+  overflow-y: auto; /* Enable scrolling if content is too long */
+}
+
+/* Style for form header */
+.form-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for each form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Input styles */
+input[type="text"], input[type="password"], input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Submit button style */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style for the toggle link */
+.toggle-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .login-container {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    transform: translateY(0);
+    right: 0; /* Remove right spacing on small screens */
+  }
+}
