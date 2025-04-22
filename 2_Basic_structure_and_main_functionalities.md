@@ -8,7 +8,7 @@ Our development environment uses both local and cloud-based services to ensure s
 
 - **Frontend**: Built with React, runs locally and ready for deployment to Vercel or Render  
 - **Backend**: Node.js with Express framework  
-- **Database**: PostgreSQL (via pg package)  
+- **Database**: PostgreSQL  
 - **Version Control**: GitHub  
 - **Dev Tools**: Visual Studio Code, Postman, Thunder Client  
 
