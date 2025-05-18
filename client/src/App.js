@@ -1,6 +1,4 @@
-// src/App.js
-
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -15,12 +13,19 @@ import Kids from "./pages/KidsCategory";
 import "./App.css";
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+
   return (
     <Router>
-      <Navbar />
+      {/* Pass toggleSidebar to Navbar */}
+      <Navbar toggleSidebar={toggleSidebar} />
       <div className="main-layout">
-        <Sidebar />
-        <div className="content-area">
+        {/* Pass sidebarOpen and toggleSidebar to Sidebar */}
+        <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+        <div className="content-area" onClick={() => sidebarOpen && setSidebarOpen(false)}>
+          {/* Close sidebar if user clicks outside */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

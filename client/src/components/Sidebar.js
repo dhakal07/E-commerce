@@ -1,17 +1,15 @@
-// Sidebar.js
-
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
-function Sidebar() {
+function Sidebar({ isOpen, toggleSidebar }) {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpen ? "open" : ""}`}>
       <h2>Categories</h2>
       <ul>
-        <li><Link to="/male">👕 Male</Link></li>
-        <li><Link to="/female">👗 Female</Link></li>
-        <li><Link to="/kids">🧒 Kids</Link></li>
+        <li><Link to="/male" onClick={toggleSidebar}>👕 Male</Link></li>
+        <li><Link to="/female" onClick={toggleSidebar}>👗 Female</Link></li>
+        <li><Link to="/kids" onClick={toggleSidebar}>🧒 Kids</Link></li>
       </ul>
     </div>
   );
