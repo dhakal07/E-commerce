@@ -23,15 +23,15 @@ Below are the key use cases defined in Phase 1, with their implementation status
 
 | Use Case                          | Implemented (Yes/No) | Demonstration / Notes                                                                 |
 |-----------------------------------|----------------------|---------------------------------------------------------------------------------------|
-| User registers and logs in        | Yes                  | Secure JWT-based authentication. Demo at 1:30 in the video.                          |
-| User adds items to cart           | Yes                  | Managed via React Context API. Demo at 2:00 in the video.                            |
-| User places an order              | Yes                  | Stored in PostgreSQL with user details. Demo at 2:30 in the video.                   |
-| User submits feedback             | Yes                  | Saved to database with timestamps. Demo at 3:00 in the video.                        |
-| User requests a return            | Yes                  | Linked to orders via database join. Demo at 3:30 in the video.                       |
-| Admin views user activity         | Yes                  | Displays logins and new users. Demo at 4:00 in the video.                           |
-| Admin manages returns             | Yes                  | Views return requests with product info. Demo at 4:30 in the video.                  |
-| Admin tracks orders               | Yes                  | Shows order status and totals. Demo at 5:00 in the video.                           |
-| Admin views user feedback         | Yes                  | Lists feedback with dates. Demo at 5:30 in the video.                               |
+| User registers and logs in        | Yes                  | Secure JWT-based authentication.                          |
+| User adds items to cart           | Yes                  | Managed via React Context API.                             |
+| User places an order              | Yes                  | Stored in PostgreSQL with user details.                    |
+| User submits feedback             | Yes                  | Saved to database with timestamps.                     |
+| User requests a return            | Yes                  | Linked to orders via database join.                       |
+| Admin views user activity         | Yes                  | Displays logins and new users.                           |
+| Admin manages returns             | Yes                  | Views return requests with product info.                 |
+| Admin tracks orders               | Yes                  | Shows order status and totals.                          |
+| Admin views user feedback         | Yes                  | Lists feedback with dates.                                |
 | User deletes account              | No                   | Deferred due to time; planned for future.                                           |
 | Admin bans users                  | No                   | Not prioritized; potential future enhancement.                                      |
 
