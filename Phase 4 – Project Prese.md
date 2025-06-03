@@ -60,7 +60,7 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
       });
     });
   });
-- **Secure User Authentication**:
+- **Order Management:**:
   ```javascript
   app.post('/api/orders', (req, res) => {
   const { useremail, total, status } = req.body;
@@ -69,4 +69,14 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
     res.status(201).json({ message: 'Order placed successfully!' });
   });
 });  
+- **Admin Dashboard Data**:
+  ```javascript
+  const getAllReturns = async (req, res) => {
+  const result = await client.query(`
+    SELECT r.id, r.orderid AS order_id, o.useremail AS email, r.productname, r.reason, r.status, r.createdat AS return_date 
+    FROM returns r LEFT JOIN orders o ON r.orderid = o.id
+  `);
+  res.status(200).json(result.rows);
+};  
+
   
