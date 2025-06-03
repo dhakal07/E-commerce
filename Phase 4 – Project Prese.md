@@ -114,7 +114,7 @@ Tested all features, fixed bugs (e.g., order.total.toFixed with parseFloat), and
 - **UI Enhancements:** Implement direct category navigation links between Male, Female, and Kids Clothing pages with active link styling (bold), enhancing user experience. Further improvements could include pagination and mobile optimization.  
 - **Cart Functionality:** Resolve cart total calculation issues with robust quantity and price parsing.  
 - **Performance:** Add indexes and caching for larger datasets.  
-- **Testing:** Introduce Jest and Mocha for automated testing.
+- **Testing:** Introduce Jest and Mocha for automated testing.  
   ## 📊 Work Hours Log
 
 Totaling approximately 135 hours, my work log reflects the effort across development phases:
@@ -151,5 +151,8 @@ Totaling approximately 135 hours, my work log reflects the effort across develop
 | **Total**  |                                           | **135h**    |                                                       |
 
 
+## 🪢 Presentation Link
+
+[Watch the Video Presentation](https://your-video-link-here.com)
 
   
