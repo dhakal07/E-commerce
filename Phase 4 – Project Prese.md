@@ -60,8 +60,7 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
       });
     });
   });
-  ### 🛒 Order Management
-
+  - **🛒 Order Management**:
 ```javascript
 app.post('/api/orders', (req, res) => {
   const { useremail, total, status } = req.body;
