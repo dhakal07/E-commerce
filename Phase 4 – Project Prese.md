@@ -76,7 +76,6 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
     SELECT r.id, r.orderid AS order_id, o.useremail AS email, r.productname, r.reason, r.status, r.createdat AS return_date 
     FROM returns r LEFT JOIN orders o ON r.orderid = o.id
   `);
-  res.status(200).json(result.rows);
-};  
+  res.status(200).json(result.rows);};  
 
   
