@@ -96,6 +96,25 @@ Added the admin dashboard, resolving schema mismatches (e.g., useremail vs. emai
 
 **Phase 5 (Testing & Polishing):**  
 Tested all features, fixed bugs (e.g., order.total.toFixed with parseFloat), and aligned dashboard styling.
+## ☀️ Reflection and Future Work
+
+### What Worked Well
+- **Full-Stack Success:** Integrated React, Node.js, and PostgreSQL into a functional e-commerce system.  
+- **Admin Dashboard:** Became a robust monitoring tool with iterative enhancements.  
+- **Learning Curve:** Mastered JWT, Context API, and database joins, enhancing my skill set.
+
+### Challenges Faced
+- **Schema Mismatches:** Incorrect column names (e.g., useremail) required extensive debugging.  
+- **Data Type Issues:** Resolved `order.total.toFixed` errors by parsing strings.  
+- **Cart Total Calculation:** Encountered `$NaN` due to invalid quantity parsing, requiring debugging of state management and number conversion.  
+- **Time Constraints:** Limited time led to deferring features like user deletion.
+
+### Future Improvements
+- **New Features:** Add user account deletion and admin user banning.  
+- **UI Enhancements:** Implement direct category navigation links between Male, Female, and Kids Clothing pages with active link styling (bold), enhancing user experience. Further improvements could include pagination and mobile optimization.  
+- **Cart Functionality:** Resolve cart total calculation issues with robust quantity and price parsing.  
+- **Performance:** Add indexes and caching for larger datasets.  
+- **Testing:** Introduce Jest and Mocha for automated testing.
 
 
   
