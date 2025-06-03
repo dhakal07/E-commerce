@@ -1,0 +1,93 @@
+.admin-dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  color: #333;
+}
+
+.admin-section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.admin-section:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h3 {
+  color: #ff8c69; /* Matches the orange navbar */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff8c69;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.data-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.data-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.data-card p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.refresh-btn {
+  padding: 10px 20px;
+  background-color: #ff8c69; /* Matches navbar background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #e07a5a; /* Darker shade for hover */
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.error {
+  color: #e74c3c; /* Red shade for errors */
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fceaea;
+  border-radius: 5px;
+}

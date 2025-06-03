@@ -1,9 +1,40 @@
-/* Contact.css */
+/* General Page Styling */
+.contact-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ffe6d5, #fff3eb); /* softer orange tones */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
 
-/* Contact Boxes (Feedback, Return, Order Tracking Buttons) */
+/* Contact Info Box */
+.contact-info {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255, 102, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info svg {
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+/* Contact Buttons */
 .contact-boxes {
   position: fixed;
-  top: 80px; /* Adjust this value to ensure the buttons are below the navbar */
+  top: 80px;
   right: 30px;
   display: flex;
   flex-direction: row;
@@ -14,19 +45,19 @@
 .contact-boxes button {
   padding: 12px 24px;
   font-size: 16px;
-  font-weight: 600;
-  background: linear-gradient(145deg, #6a5af9, #9a67f0);
+  font-weight: bold;
+  background-color: #ff6600;
   color: white;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
 }
 
 .contact-boxes button:hover {
+  background-color: #ff8533;
   transform: translateY(-3px);
-  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-boxes button:focus {
@@ -38,7 +69,71 @@
   box-shadow: none;
 }
 
-/* Social Media Section (Follow Us) */
+/* Form Container */
+.form-container {
+  margin-top: 30px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Styling */
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+form button {
+  padding: 12px 24px;
+  background-color: #ff6600;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+  background-color: #ff8533;
+  transform: scale(1.05);
+}
+
+/* Social Media */
 .social-media {
   position: fixed;
   bottom: 30px;
@@ -47,6 +142,13 @@
   justify-content: center;
   gap: 15px;
   z-index: 1000;
+  align-items: center;
+}
+
+.social-media p {
+  margin: 0;
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 .social-media a {
@@ -54,12 +156,32 @@
 }
 
 .social-media img {
-  width: 40px; /* Explicit size for the icons */
-  height: 40px; /* Explicit size for the icons */
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .social-media img:hover {
   transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-boxes {
+    flex-direction: column;
+    top: auto;
+    bottom: 150px;
+    right: 15px;
+  }
+
+  .contact-boxes button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .contact-info,
+  .form-container {
+    padding: 20px;
+  }
 }

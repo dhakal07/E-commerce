@@ -1,6 +1,7 @@
-// src/pages/MaleCategory.js
 import React from "react";
 import "./Category.css";
+import ProductCard from "../components/ProductCard";
+import { Link } from "react-router-dom";
 
 function importAll(r) {
   return r.keys().map((key) => {
@@ -17,25 +18,24 @@ const images = importAll(require.context("../assets/MaleImage", false, /\.(png|j
 
 const MaleCategory = () => {
   const maleProducts = images.map(({ src, name }, index) => ({
+    id: index + 1,
     name,
-    price: `$${(index + 1) * 15}`, // Just a sample price, you can adjust or keep it simple
-    img: src,
+    price: (index + 1) * 15,
+    image: src,
   }));
 
   return (
     <div className="category-page male-page">
+      {/* Category Navigation */}
+      <div className="category-nav">
+        <Link to="/male">Male Clothing</Link> | 
+        <Link to="/female">Female Clothing</Link> | 
+        <Link to="/kids">Kids Clothing</Link>
+      </div>
       <h1 className="category-title">Male Clothing</h1>
       <div className="items-grid">
-        {maleProducts.map((product, index) => (
-          <div key={index} className="item-card">
-            <img
-              src={product.img}
-              alt={product.name}
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
-            />
-            <h3 className="item-name">{product.name}</h3>
-            <p className="item-price">{product.price}</p>
-          </div>
+        {maleProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>

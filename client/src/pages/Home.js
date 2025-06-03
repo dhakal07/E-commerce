@@ -1,32 +1,35 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useRef } from "react";
 import "./Home.css";
 
 import maleImg from "../assets/MaleImage/pant.jpeg";
-import femaleImg from "../assets/FemaleImage/images (1).jpeg";
+import femaleImg from "../assets/FemaleImage/Black_hoodie.jpeg";
 import kidsImg from "../assets/KidsImage/download (1).jpeg";
 
 function Home() {
-  const navigate = useNavigate();
+  const categoryRef = useRef(null);
+
+  const scrollToCategories = () => {
+    categoryRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to TrendyStore</h1>
+        <h1>Welcome to SimplyClothes</h1>
         <p>Your one-stop shop for stylish clothing for the whole family.</p>
-        <button className="shop-now" onClick={() => navigate("/categories")}>
+        <button className="shop-now" onClick={scrollToCategories}>
           Shop Now
         </button>
       </section>
 
       {/* Categories Section */}
-      <section className="categories">
+      <section className="categories" ref={categoryRef}>
         <h2>Shop by Category</h2>
         <div className="categories-grid">
           <div
             className="category-card male-card"
-            onClick={() => navigate("/male")}
+            onClick={() => window.location.href = "/male"}
             role="button"
             tabIndex={0}
           >
@@ -36,7 +39,7 @@ function Home() {
 
           <div
             className="category-card female-card"
-            onClick={() => navigate("/female")}
+            onClick={() => window.location.href = "/female"}
             role="button"
             tabIndex={0}
           >
@@ -46,7 +49,7 @@ function Home() {
 
           <div
             className="category-card kids-card"
-            onClick={() => navigate("/kids")}
+            onClick={() => window.location.href = "/kids"}
             role="button"
             tabIndex={0}
           >

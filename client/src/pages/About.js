@@ -1,5 +1,9 @@
 import React from 'react';
-import './About.css'; // Don't forget to import the CSS file
+import './About.css';
+import { FaHeart, FaLeaf, FaLightbulb } from 'react-icons/fa';
+import rajivImg from '../assets/rajiv-dhakal.png';
+import komalImg from '../assets/komal-gautam.png';
+
 
 function About() {
   return (
@@ -21,15 +25,15 @@ function About() {
         <p>At Simply Clothes, we provide quality fashion that’s affordable, stylish, and sustainable. Our mission is to offer you the best shopping experience.</p>
         <div className="mission-icons">
           <div className="icon">
-            <img src="path/to/heart-icon.svg" alt="Customer Commitment" />
+            <FaHeart color="#FF5722" size={40} />
             <p>Customer First</p>
           </div>
           <div className="icon">
-            <img src="path/to/leaf-icon.svg" alt="Sustainability" />
+            <FaLeaf color="#FF5722" size={40} />
             <p>Sustainability</p>
           </div>
           <div className="icon">
-            <img src="path/to/lightbulb-icon.svg" alt="Innovation" />
+            <FaLightbulb color="#FF5722" size={40} />
             <p>Innovation</p>
           </div>
         </div>
@@ -59,12 +63,12 @@ function About() {
         <h2>Meet Our Team</h2>
         <div className="team-members">
           <div className="member">
-            <img src="path/to/rajiv-dhakal.jpg"/>
+            <img src={rajivImg} alt="Rajiv Dhakal" />
             <h4>Rajiv Dhakal</h4>
             <p>Founder & CEO</p>
           </div>
           <div className="member">
-            <img src="path/to/komal-gautam.jpg"/>
+            <img src={komalImg} alt="Komal Gautam" />
             <h4>Komal Gautam</h4>
             <p>Head of Marketing</p>
           </div>
@@ -82,6 +86,10 @@ function About() {
           <div className="testimonial-card">
             <p>"I love the variety and how affordable everything is. My new favorite online store!"</p>
             <p>- Mark S.</p>
+          </div>
+          <div className="testimonial-card">
+            <p>"Simply Clothes made shopping so easy! The clothing is stylish and the quality is amazing!"</p>
+            <p>- Jane D.</p>
           </div>
         </div>
       </section>
