@@ -60,4 +60,13 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
       });
     });
   });
+- **Secure User Authentication**:
+  ```javascript
+  app.post('/api/orders', (req, res) => {
+  const { useremail, total, status } = req.body;
+  client.query('INSERT INTO orders (useremail, total, status, createdat) VALUES ($1, $2, $3, NOW())', [useremail, total, status], (err) => {
+    if (err) return res.status(500).json({ message: 'Error adding order' });
+    res.status(201).json({ message: 'Order placed successfully!' });
+  });
+});  
   
