@@ -68,7 +68,7 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
     if (err) return res.status(500).json({ message: 'Error adding order' });
     res.status(201).json({ message: 'Order placed successfully!' });
   });
-});  
+});
 - **Admin Dashboard Data**:
   ```javascript
   const getAllReturns = async (req, res) => {
@@ -76,6 +76,15 @@ The e-commerce platform leverages a robust tech stack and thoughtful architectur
     SELECT r.id, r.orderid AS order_id, o.useremail AS email, r.productname, r.reason, r.status, r.createdat AS return_date 
     FROM returns r LEFT JOIN orders o ON r.orderid = o.id
   `);
-  res.status(200).json(result.rows);};  
+  res.status(200).json(result.rows);
+};  
+Development Process
+Over approximately 135 hours, the project evolved through these phases:
+
+Phase 1 (Planning): Defined use cases and designed the PostgreSQL schema, sketching UI wireframes.
+Phase 2 (Backend Setup): Built the Node.js/Express backend, integrated PostgreSQL with Docker, and implemented JWT authentication. Challenges included CORS setup and database connectivity.
+Phase 3 (Frontend Development): Developed the React frontend (navbar, cart, user pages), overcoming initial state management issues with Context API. Styled iteratively to align with the orange theme.
+Phase 4 (Admin Features): Added the admin dashboard, resolving schema mismatches (e.g., useremail vs. email) with updated queries.
+Phase 5 (Testing & Polishing): Tested all features, fixed bugs (e.g., order.total.toFixed with parseFloat), and aligned dashboard styling.
 
   
